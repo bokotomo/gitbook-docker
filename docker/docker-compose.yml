@@ -10,6 +10,6 @@ services:
       - "8080:4000"
     command: >
       ash -c '
-      rm -rf _book
+      rm -rf _book &&
       gitbook init &&
       gitbook serve'
