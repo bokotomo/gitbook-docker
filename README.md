@@ -1,5 +1,5 @@
 ## get first
-docker-compose exec node gitbook init
+docker-compose up -d
 
 ## login
 docker-compose exec node ash
@@ -10,4 +10,3 @@ docker-compose exec node gitbook serve
 ## build
 docker-compose exec node gitbook build
 
-# gitbook-docker

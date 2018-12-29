@@ -8,3 +8,6 @@ services:
       - ./app:/app
     ports:
       - "8080:4000"
+    command: >
+      ash -c 'gitbook init &&
+      gitbook serve'
