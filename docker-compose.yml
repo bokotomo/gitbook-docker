@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    tty: true
+    volumes:
+      - ./app:/app
+    ports:
+      - "8080:4000"

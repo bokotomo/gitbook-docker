@@ -1,0 +1,6 @@
+{
+    "variables": {
+       "host": "localhost"
+    },
+    "plugins": []
+}
