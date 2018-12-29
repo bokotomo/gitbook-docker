@@ -1,5 +1,6 @@
-## get first
-docker-compose up -d
+## get start
+cd docker  
+docker-compose up -d  
 
 ## login
 docker-compose exec node ash

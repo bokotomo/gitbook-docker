@@ -1,13 +1,15 @@
 version: '3'
 
 services:
-  node:
+  app:
     build: .
     tty: true
     volumes:
-      - ./app:/app
+      - ${APP_CODE_PATH_HOST}:/app
     ports:
       - "8080:4000"
     command: >
-      ash -c 'gitbook init &&
+      ash -c '
+      rm -rf _book
+      gitbook init &&
       gitbook serve'
